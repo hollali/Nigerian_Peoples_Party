@@ -1,0 +1,83 @@
+/*these style will be applied to devices that have a width of at least 768px*/
+@media screen and (min-width: 768px){
+    .logo{
+        justify-content: center;
+    }
+    .cards{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+        padding: 0;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .cards{
+        width: 30rem;
+    }
+
+    .cards:first-of-type{
+        margin-bottom: 0;
+    }
+
+    .card-image{
+        height: 26rem;
+        width: 30rem;
+    }
+
+    .votes-number-hollali,
+    .votes-number-mawuli{
+        font-size: 3.5rem;
+    }
+
+    .votes-text{
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .candidate-name{
+        font-size: 2rem; 
+    }
+
+    .candidate-party{
+        font-size: 1.1rem;
+    }
+
+    .card-btn{
+        font-size: 2rem;
+    }
+}
+
+/*these styles will be applied to devices that have a width of at least
+1024px*/
+@media screen and (min-width : 1024px) {
+    .cards{
+        width: 70%;
+    }
+
+    .card:hover{
+        transform: translateY(-2rem);
+    }
+
+    .card:hover.btn-hollali,
+    .card:hover.btn-mawuli{
+        font-size: 2.5rem;
+    }
+    
+    .btn-hollali:hover{
+        background: aquamarine;
+        height: 60px;
+    }
+
+    .btn-mawuli:hover{
+        background:rgb(156, 106, 106);
+        height: 60px;
+    }
+}
+/*these styles will be applied to devices that have a width of at least 1400px */
+@media  screen and (min-width : 1400px) {
+    .cards{
+        width: 60%;
+    }
+    
+}

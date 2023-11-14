@@ -1,0 +1,220 @@
+/**********************
+********Base Style*******/
+
+
+:roots{
+    --black: #1b1d29;
+    --white: #ffffffff;
+    --big-overlay : RBG(253,255,206,0,96)
+    --btn-red : #fe4c13;
+    --btn-red-hover : #ee3a01;
+    --btn-light-blue : #3fb3e4;
+    --btn-light-blue-hover:#21a7e0;
+    --shadow : #cccea7;
+}
+
+*
+{
+    box-sizing:border-box ;
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#app{
+    height: 100%;
+}
+
+/*******
+* APP *
+*******/
+
+app{
+    background: var(--big-overlay);
+    overflow-y: scroll;
+}
+
+.app-overlay{
+    position: absolute;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+}
+
+/***********
+ * HEADER *
+ **********/
+
+    header{
+        background-color: #1b1d29;
+        padding: 1rem 2rem;
+        margin-bottom: 0rem;
+        z-index: 1;
+    }
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NPP ELECTIONS*/
+.logo h1{
+        font-size: 2rem;
+        color: white;
+}
+
+/* NPP */
+.logo img{
+    margin-right: 1rem;
+    width : 4rem;
+}
+/******
+ * MAIN *
+ ******/
+
+    main{
+        height: 100%;
+        background-color: white;
+        z-index: 0;
+    }
+
+    .cards{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    /*Card*/
+    .card{
+        width: 25rem;
+        border: 2px solid var(--black);
+        overflow:hidden;
+        box-shadow: 15px 15px 6px var(--shadow);
+        transition: all 0.5 ease;
+        cursor: pointer;
+    }
+
+    .card:first-of-type{
+        margin-bottom: 5rem;
+    }
+
+ /*Card image */
+.card-image{
+    padding-top: 14px;
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+/* Card information*/
+.card-info{
+    display: flex;
+    justify-content: space-evenly;
+    background: var(--white);
+    color: var(--black);
+    padding:2rem 0;
+}
+
+.candidate-votes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    }
+
+.votes-number-hollali,
+.votes-number-mawuli{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.votes-text{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* line*/
+.line{
+    width: 0.1rem;
+    background: var(--black);
+}
+
+/*Candidate information*/
+.candidate-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.candidate-name{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.candidate-party{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*Card bButton*/
+.card-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1.5rem;
+    color: white;
+    border-top: 2px solid black;
+}
+
+.btn-hollali,
+.btn-mawuli{
+    transition: all 0.5rem;
+}
+
+.btn-hollali{
+    background: aqua;
+}
+
+.btn-mawuli{
+    background: rgb(223, 57, 57);
+}
+
+footer{
+    background:black;
+    color: antiquewhite;
+    height: 100px;
+    position: relative;
+}
+
+.container{
+    color: white;
+    text-decoration: none;
+}
+
+.home{
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    color: aquamarine;
+    }
+
+.footer-link{
+    padding-left: 15px;
+}
+

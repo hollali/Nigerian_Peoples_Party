@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li class="logo"><a href="#">Nigerian Peoples Party</a></li>
+                    <li class="item"><a href="../index.html">Home</a></li>
+                    <li class="item"><a href="#">Testimonials</a></li>
+                    </li>
+                    <li class="item button"><a href="../pages/vote.html">Vote</a></li>
+                    <li class="toggle"><span class="bars"></span></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <h3>ABOUT US</h3>
+            </div>
+        </header>
+    <div class="container">
+        <p>The Nigerian Peoples Party (NPP) was one of the major political party that contested elections in the Nigerian Second Republic . 
+    The party was made up of three major groups: the Lagos Progressives, Club 19,
+    and the Nigerian Council of Understanding.</p>
+        The Lagos progressives included some Lagos based NCNC  politicians such as Adeniran Ogunsanya , 
+    T.O.S. Benson and Kola Balogun (ht.) The National Council of understanding was led by Waziri while Club 19 had Matthew Mbu , Solomon Lar ,
+    Omo Omoruyi , Paul Unongo, Antonio Fernandez  and others as members.
+    <p>Though the party was formed to create a national outlook,
+    the exit of Waziri Ibrahim , led to an erosion of politics without borders. 
+    Waziri's exit was precipitated because he wanted to be the chairman and also the presidential candidate of the party. 
+    The party later came to be seen as an eastern Nigerian party, though it hard scores of support in Plateau State, Rivers State  and Lagos.
+    The party tried to promote social justice  and social change  as vital ingredients of its mission. In 1979, 
+    the party chose former president Nnamdi Azikiwe  as its presidential candidate.</p>
+    In states like Imo State ,
+    <img src="../images/NPP.jfif" alt="">
+        Leaders such as the governor, Sam Mbakwe  were elected with landslide victories (over 80%) in the Imo State Legislative, 
+        Gubernatorial and Presidential Elections in Nigeria in 1979. In Imo State , the NPP Campaign Director, Party Secretary and principal architect in electing
+        Sam Mbakwe, was Dr. Sebastian Okechukwu Mezu .
+    Before the 1979 elections, the party took some political hits, about 254 of its candidates were disqualified from contesting electoral seats, 
+    the second most out of the five major parties. Nevertheless, 
+    the party won about 17% of the House of Representative seats and three gubernatorial elections.
+    </div>
+</main>
+
+    <script src="../script/index.js">
+        $(function() {
+        $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>  
+</body>
+</html>

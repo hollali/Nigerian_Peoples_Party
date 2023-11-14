@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>VOTING AREA</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <link rel="stylesheet" href="../css/media.css">
+   <link rel="stylesheet" href="../css/index.css">
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+   crossorigin="anonymous">
+   </script>
+</head>
+<body>
+   <!--APP-->  
+   <div id="app">
+      <div class="app overlay"></div>
+      <!---HEADER-->
+      <nav>
+         <ul class="menu">
+            <li class="logo"><a href="#">Nigerian Peoples Party</a></li>
+            <li class="item"><a href="../index.html">Home</a></li>
+            <li class="item"><a href="#">Testimonials</a></li>
+            <li class="item"><a href="./about.html">About</a></li>
+            </li>
+            <li class="toggle"><span class="bars"></span></li>
+         </ul>
+      </nav>
+      <!---Main--->
+      <main>
+      <div class="cards">
+         <div class="card">
+            <img class="card-image" src="../images/business-man-smiling-portrait.jpg">
+            <div class="card-info">
+         <div class="candidate-votes">
+            <span class="votes-number">0</span>
+            <span class="votes-text">VOTES</span>
+         </div>
+         <div class="line"></div>
+         <div class="candidate-info">
+            <span class="candidate name">Hanson</span>
+            <span class="party">NOP</span>
+         </div>
+         </div>
+         <button class="card-btn btn-hollali">VOTE</button>
+      </div>
+   </div>
+   <div class="cards">
+      <div class="card">
+         <img class="card-image" src="../images/cheerful-businessman-smiling.jpg">
+         <div class="card-info">
+      <div class="candidate-votes">
+         <span class="votes-number">0</span>
+         <span class="votes-text">VOTES</span>
+      </div>
+      <div class="line"></div>
+      <div class="canditate-info">
+         <span class="candidate name">Micheal</span>
+         <span class="party">ANP</span>
+      </div>
+      </div>
+      <button class="card-btn btn-mawuli">VOTE</button>
+   </div>
+   </div>
+</main>
+   </div>
+</body>
+<script src="../script/app.js"></script>
+<script src="../script/data.js"></script>
+<script src="../script/function.js"></script>
+<script src="../script/index.js">
+   $(function() {
+   $(".toggle").on("click", function() {
+   if ($(".item").hasClass("active")) {
+      $(".item").removeClass("active");
+   } else {
+      $(".item").addClass("active");
+   }
+});
+});
+</script>  
+</html>
